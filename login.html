@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title> TicoRides</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <section class="principal">
+            <div class="imagen">
+                <img src="images/logoAventones.png" alt="logo" style="width: 100px;">
+            </div>
+            <div class="text">
+                <h1>AVENTONES</h1>
+            </div>
+        </section>
+        <section class="boton">
+            <div class="btn">
+                <button class="btn1">Sign in with Google</button>
+                <h1> Or </h1>
+                <fieldset class="box">
+                    <div class="title"> Username </div>
+                    <input type="text" class="inp" id="username">
+                    <div class="password"><span class="required">*</span> Password </div>
+                    <input type="password" class="inpt" id="password" placeholder="**********">
+                    <div class="register-wrapper">
+                        <p class="not-user">Not an user?</p>
+                        <button onclick="window.location.href='registro.html'" class="btn-info" id="loginBtn">Register Now</button>
+                    </div>
+                </fieldset>
+                <button type="submit" class="btn-login">Login</button>
+            </div>
+        </section>
+    </div>
+    <div class="container">
+
+        <div class="row">
+            <nav>
+                <p class="p1">
+                    __________________________________________________________________________________________________________________________________________________________
+                </p>
+                <a href="home.html" class="link">Home |</a>&nbsp;&nbsp;
+                <a href="rides.html" class="link">Rides |</a>&nbsp;&nbsp;
+                <a href="Booking.html" class="link">Bookings |</a>&nbsp;&nbsp;
+                <a href="settings.html" class="link">Settings |</a>&nbsp;&nbsp;
+                <a href="login.html" class="link">Login |</a>&nbsp;&nbsp;
+                <a href="register.html" class="link">Register </a>&nbsp;&nbsp;
+            </nav>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; Aventones.com</p>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/app2.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

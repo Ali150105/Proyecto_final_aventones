@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="autor" content="Alison Alfaro Arias">
+    <title> AVENTONES-REGISTRATION </title>
+    <link rel="stylesheet" href="registro.css">
+</head>
+
+<body>
+    <section class="principal">
+        <div class="imagen">
+            <img src="images/logoAventones.png" alt="logo" style="width: 100px;">
+        </div>
+        <div class="text">
+            <h1>AVENTONES</h1>
+        </div>
+    </section>
+    <section class="informacion">
+        <div class="registro">
+            <h1> User Registration </h1>
+            <p class="line">____________</p>
+            <div class="input-container">
+                <div class="input-group">
+                    <div class="title">First Name</div>
+                    <input type="text" class="inpt-nombre" id="fname">
+                </div>
+                <div class="input-group">
+                    <div class="title">Last Name</div>
+                    <input type="text" class="inpt-apellido" id="lname">
+                </div>
+            </div>
+
+            <div class="id1"> Identification number </div>
+            <input type="text" class="id" id="numid">&nbsp;
+
+            <div class="nac"> Birth date </div>
+            <input type="date" class="inpNac" id="bdate">&nbsp;
+
+            <div class="email"> Email </div>
+            <input type="email" class="inpE" id="email">&nbsp;
+
+            <div class="input-container">
+                <div class="input-group">
+                    <div class="pass"> Password </div>
+                    <input type="password" class="inpP" id="password">
+                </div>
+                <div class="input-group">
+                    <div class="pass"> Repeat Password </div>
+                    <input type="password" class="inpP" id="rpassword">
+                </div>
+            </div>
+
+            <div class="address"> Address </div>
+            <input type="text" class="inpA" id="address">&nbsp;
+
+            <div class="input-container">
+                <div class="input-group">
+                    <div class="country"> Country </div>
+                    <select class="inpC" id="country">
+                        <option value="v"> --- </option>
+                        <option value="AF">Afghanistan</option>
+                        <option value="AL">Albania</option>
+                        <option value="ALG">Algeria</option>
+                        <option value="CR">Costa Rica</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <div class="country"> State </div>
+                    <input type="text" class="inpC" id="state">
+                </div>
+            </div>
+            <div class="input-container">
+                <div class="input-group">
+                    <div class="city"> City </div>
+                    <input type="text" class="inpCi" id="city">&nbsp;
+                </div>
+                <div class="input-group">
+                    <div class="city"> Phone number </div>
+                    <input type="tel" class="inpCi" id="pnumber">&nbsp;
+                </div>
+            </div>
+            <div class="register-wrapper">
+                <p class="already-user">Already an user?</p>
+                <button onclick="window.location.href='login.html'" class="btn-info">Login here</button>
+
+                <p class="register-driver"> Register as driver?</p>
+                <button onclick="window.location.href='driver_register.html'" class="btn-info" id="registerBtn">Click
+                    here</button>
+            </div>
+        </div>
+    </section>
+    <div class="sign">
+        <input type="button" class="btn-sign" value="Sign up" id="addUserButton" onclick="validateForm()"></input>
+    </div>
+    <div class="container">
+
+        <div class="row">
+            <nav>
+                <p class="p1">
+                    __________________________________________________________________________________________________________________________________________________________
+                </p>
+                <a href="home.html" class="link">Home |</a>&nbsp;&nbsp;
+                <a href="rides.html" class="link">Rides |</a>&nbsp;&nbsp;
+                <a href="Booking.html" class="link">Bookings |</a>&nbsp;&nbsp;
+                <a href="settings.html" class="link">Settings |</a>&nbsp;&nbsp;
+                <a href="login.html" class="link">Login |</a>&nbsp;&nbsp;
+                <a href="register.html" class="link">Register </a>&nbsp;&nbsp;
+            </nav>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; Aventones.com</p>
+    </div>
+    </div>
+    <script src="js/validation_reg.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/register.js"></script>
+</body>
+
+</html>
