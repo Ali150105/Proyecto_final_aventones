@@ -1,142 +1,135 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title> Registro Proveedor </title>
-    <link rel="stylesheet" href="driver_register.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andrea Benavides Zúñiga">
+    <title>Driver Register - Aventones</title>
+    <link rel="stylesheet" href="register.css">
 </head>
 
 <body>
-    <section class="principal">
-        <div class="imagen">
-            <img src="images/logoAventones.png" alt="logo" style="width: 100px;">
-        </div>
-        <div class="text">
-            <h1>AVENTONES</h1>
-        </div>
-    </section>
-    <section class="informacion">
-        <div class="registro">
-            <h1> User Registration drivers </h1>
-            <p class="line">____________</p>
-            <div class="input-container">
-                <div class="input-group">
-                    <div class="title">First Name</div>
-                    <input type="text" class="inpt-nombre" id="fname">
+    <main class="register-container">
+        <section class="register-box">
+            <img src="logoAventones.png" alt="Aventones Logo" class="logo">
+            <h1>Driver Registration</h1>
+            <form action="/register" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
                 </div>
-                <div class="input-group">
-                    <div class="title">Last Name</div>
-                    <input type="text" class="inpt-apellido" id="lname">
-                </div>
-            </div>
-            <div class="id1"> Identification number </div>
-            <input type="text" class="id" id="numid">&nbsp;
 
-            <div class="nac"> Birth date </div>
-            <input type="date" class="inpNac" id="bdate">&nbsp;
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
 
-            <div class="email"> Email </div>
-            <input type="email" class="inpE" id="email">&nbsp;
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="repeat-password">Repeat Password</label>
+                        <input type="password" id="repeat-password" name="repeat-password" required>
+                    </div>
+                </div>
 
-            <div class="input-container">
-                <div class="input-group">
-                    <div class="pass"> Password </div>
-                    <input type="password" class="inpP" id="password">
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
                 </div>
-                <div class="input-group">
-                    <div class="pass"> Repeat Password </div>
-                    <input type="password" class="inpP" id="rpassword">
-                </div>
-            </div>
 
-            <div class="address"> Address </div>
-            <input type="text" class="inpA" id="address">&nbsp;
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <select id="country" name="country" required>
+                            <option value="usa">United States</option>
+                            <option value="canada">Canada</option>
+                            <option value="mexico">Mexico</option>
+                            <option value="costa-rica">Costa Rica</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" required>
+                    </div>
+                </div>
 
-            <div class="input-container">
-                <div class="input-group">
-                    <div class="country"> Country </div>
-                    <select class="inpC" id="country">
-                        <option value="v"> --- </option>
-                        <option value="NI">Nicaragua</option>
-                        <option value="PA">Panama</option>
-                        <option value="CL">Colombia</option>
-                        <option value="CR">Costa Rica</option>
-                    </select>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
                 </div>
-                <div class="input-group">
-                    <div class="country"> State </div>
-                    <input type="text" class="inpC" id="state">
-                </div>
-            </div>
-            <div class="input-container">
-                <div class="input-group">
-                    <div class="city"> City </div>
-                    <input type="text" class="inpCi" id="city">
-                </div>
-                <div class="input-group">
-                    <div class="city"> Phone number </div>
-                    <input type="tel" class="inpCi" id="pnumber">
-                </div>
-            </div>
-            <div class="input-container">
-                <div class="input-group">
-                    <div class="marca"> Brand of the vehicle </div>
-                    <input type="text" class="inpMa" id="marca">
-                </div>
-                <div class="input-group">
-                    <div class="modelo"> Model of the vehicle </div>
-                    <input type="text" class="inpMo" id="modelo">
-                </div>
-            </div>
-            <div class="input-container">
-                <div class="input-group">
-                    <div class="año"> Year of the vehicle </div>
-                    <input type="text" class="inpYe" id="año">
-                </div>
-                <div class="input-group">
-                    <div class="licencia"> License plate number </div>
-                    <input type="text" class="inpLi" id="licencia">
-                </div>
-            </div>
 
-            <div class="register-wrapper">
-                <p class="already-user">Already an user?</p>
-                <button onclick="window.location.href='login.html'" class="btn-info">Login here</button>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="vehicle-make">Vehicle Make</label>
+                        <select id="vehicle-make" name="vehicle-make" required>
+                            <option value="jeep">Jeep</option>
+                            <option value="ford">Ford</option>
+                            <option value="bmw">BMW</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="type-of-vehicle">Type Of Vehicle</label>
+                        <select id="type-of-vehicle" name="type-of-vehicle" required>
+                            <option value="jeep">Jeep Rubicon</option>
+                            <option value="ford">Ford Mustang</option>
+                            <option value="bmw">BMW X5</option>
+                            <option value="audi">Audi Q7</option>
+                        </select>
+                    </div>
+                </div>
 
-                <p class="register-driver"> Register as user?</p>
-                <button onclick="window.location.href='register.html'" class="btn-info" id="registerBtn">Click
-                    here</button>
-            </div>
-        </div>
-    </section>
-    <div class="sign">
-        <input type="button" class="btn-sign" value="Sign up" id="addUserButton" onclick="validateForm2()"></input>
-
-    </div>
-    <div class="container">
-
-        <div class="row">
-            <nav>
-                <p class="p1">
-                    __________________________________________________________________________________________________________________________________________________________
-                </p>
-                <a href="home.html" class="link">Home |</a>&nbsp;&nbsp;
-                <a href="rides.html" class="link">Rides |</a>&nbsp;&nbsp;
-                <a href="Booking.html" class="link">Bookings |</a>&nbsp;&nbsp;
-                <a href="settings.html" class="link">Settings |</a>&nbsp;&nbsp;
-                <a href="login.html" class="link">Login |</a>&nbsp;&nbsp;
-                <a href="register.html" class="link">Register </a>&nbsp;&nbsp;
-            </nav>
-        </div>
-    </div>
-    <div class="footer">
-        <p>&copy; Aventones.com</p>
-    </div>
-    <script src="js/validation_reg.js"></script>
-    <script src="js/app2.js"></script>
-    <script src="js/prov_register.js"></script>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="vehicle-year">Vehicle Year</label>
+                        <select id="vehicle-year" name="vehicle-year" required>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="vehicle-plate">Vehicle Plate</label>
+                        <input type="vehicle-plate" id="vehicle-plate" name="vehicle-plate" required>
+                    </div>
+                </div>
+                <a href="login.html" class="button">Sign Up</a>
+            </form>
+            <p class="login">Already an user? <a href="login.html">Login here</a></p>
+            <p class="login">Register as driver? <a href="driver_register.html">Click here</a></p>
+            <footer>
+                <a href="search-rides.html">Home</a>
+                <a href="my-rides.html">Rides</a>
+                <a href="view-bookins.html">Bookings</a>
+                <a href="settings-edit-profile.html">Settings</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <p>&copy; Aventones.com</p>
+            </footer>
+        </section>
+    </main>
+    <script src="script-register.js"></script>
 </body>
 
 </html>
