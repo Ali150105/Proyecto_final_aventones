@@ -16,7 +16,10 @@
     --button-hover-text-color: #fff;
     --nav-bg-color: #f4f4f4;
   }
-  
+  .contenedor{
+    border: 1px solid blue;
+    margin: 10%;
+}
   /* Estilo general del cuerpo */
   body {
     font-family: var(--font-family);
