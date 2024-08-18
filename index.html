@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Alison Alfaro Arias">
     <title>Aventones Login</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="styles-login.css">
 </head>
 
 <body>
-    <div class="contenedor">
+    <div class="login-container">
         <div class="login-box">
-            <img src="logoAventones.png" alt="Aventones Logo" class="logo">
+            <img src="img/logoAventones.png" alt="Aventones Logo" class="logo">
             <button class="gsi-material-button" id="google-login-button">
                 <div class="gsi-material-button-state"></div>
                 <div class="gsi-material-button-content-wrapper">
@@ -44,16 +44,18 @@
                 <input type="text" id="username" name="username" required>
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required>
-                <button type="submit" class="button">Login</button>
+                <div class="form-row">
+                    <a href="#" id="login-button" class="button">Login</a>
+                </div>
             </form>
-            <p class="register">Not an user? <a href="register.html">Register Now</a></p>
+            <p class="register">Not an user? <a href="user-register.html">Register Now</a></p>
             <footer>
                 <a href="search-rides.html">Home</a>
                 <a href="my-rides.html">Rides</a>
                 <a href="view-bookins.html">Bookings</a>
                 <a href="settings-edit-profile.html">Settings</a>
-                <a href="login.html">Login</a>
-                <a href="register.html">Register</a>
+                <a href="index.html">Login</a>
+                <a href="user-register.html">Register</a>
                 <p>&copy; Aventones.com</p>
             </footer>
         </div>
