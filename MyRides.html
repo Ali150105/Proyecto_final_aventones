@@ -19,24 +19,24 @@
         <!-- Barra de navegación -->
         <nav class="navbar">
             <!-- Enlaces de navegación -->
-            <a href="/proyecto2/SearchHome.html" class="nav-link">Home</a>
-            <a id="ridesLink" href="/proyecto2/MyRides.html" class="nav-link">Rides</a>
-            <a href="/proyecto2/Booking.html" class="nav-link">Booking</a>
+            <a href="SearchHome.html" class="nav-link">Home</a>
+            <a id="ridesLink" href="MyRides.html" class="nav-link">Rides</a>
+            <a href="Booking.html" class="nav-link">Booking</a>
             <input type="text" class="search-input" placeholder="Search...">
 
             <!-- Icono de perfil con un menú desplegable -->
             <div class="icon-wrapper" tabindex="0">
                 <i class="fas fa-user" id="profile-icon"></i>
                 <div class="dropdown-menu">
-                    <a href="/proyecto2/InfoUsuario.html" class="dropdown-item">Settings</a>
-                    <a href="/proyecto2/Login.html" class="dropdown-item">Logout</a>
+                    <a href="InfoUsuario.html" class="dropdown-item">Settings</a>
+                    <a href="Login.html" class="dropdown-item">Logout</a>
                 </div>
             </div>
         </nav>
         <h5>My Rides</h5>
 
         <!-- Botón para agregar un nuevo ride -->
-        <a href="/proyecto2/AddRides.html" class="new-ride2-btn">New ride</a>
+        <a href="AddRides.html" class="new-ride2-btn">New ride</a>
 
         <div class="home-container">
             <!-- Tabla de rides -->
@@ -61,12 +61,12 @@
     <!-- Pie de página -->
     <footer class="footer">
         <p>
-            <a href="/proyecto2/SearchHome.html" target="_blank">Home</a> |
-            <a href="/proyecto2/MyRides.html" target="_blank">Rides</a> |
-            <a href="/proyecto2/Booking.html" target="_blank">Booking</a> |
-            <a href="/proyecto2/EdditProfile.html" target="_blank">Settings</a> |
-            <a href="/proyecto2/Login.html" target="_blank">Login</a> |
-            <a href="/proyecto2/Registration/Registro.html" target="_blank">Register</a>
+            <a href="SearchHome.html" target="_blank">Home</a> |
+            <a href="MyRides.html" target="_blank">Rides</a> |
+            <a href="Booking.html" target="_blank">Booking</a> |
+            <a href="EditProfile.html" target="_blank">Settings</a> |
+            <a href="Login.html" target="_blank">Login</a> |
+            <a href="Registration/Registro.html" target="_blank">Register</a>
         </p>
         <!-- Derechos de autor -->
         <p>&copy; Aventones.com</p>
@@ -79,7 +79,7 @@
             // Verificar si el usuario ha iniciado sesión
             if (!currentUser) {
                 alert('Por favor, inicie sesión primero.');
-                window.location.href = '/proyecto2/Login.html'; // Redirigir a la página de inicio de sesión si no hay usuario
+                window.location.href = 'Login.html'; // Redirigir a la página de inicio de sesión si no hay usuario
                 return;
             }
 

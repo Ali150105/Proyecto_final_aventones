@@ -51,6 +51,6 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('users', JSON.stringify(users));
 
         alert('Registration Successful!');
-        window.location.href = '/Proyecto2/Login.html';
+        window.location.href = 'Login.html';
     });
 });

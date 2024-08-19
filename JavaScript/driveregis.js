@@ -38,5 +38,5 @@ document.getElementById('signUpButton').addEventListener('click', function(event
     localStorage.setItem('drivers', JSON.stringify(drivers));
 
     alert('Driver Registration Successful!');
-    window.location.href = '/proyecto2/Login.html';
+    window.location.href = 'Login.html';
 });

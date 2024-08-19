@@ -14,6 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('PhoneNumber').value = currentUser.phoneNumber || '';
     } else {
         alert('No user is logged in.');
-        window.location.href = '/proyecto2/Login.html'; // Redirige a la página de inicio de sesión si no hay usuario
+        window.location.href = 'Login.html'; // Redirige a la página de inicio de sesión si no hay usuario
     }
 });

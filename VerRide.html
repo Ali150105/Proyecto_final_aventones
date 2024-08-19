@@ -18,17 +18,17 @@
         </div>
         <!-- Barra de navegación -->
         <nav class="navbar">
-            <a href="/proyecto2/SearchHome.html" class="nav-link">Home</a>
-            <a id="ridesLink" href="/proyecto2/MyRides.html" class="nav-link">Rides</a>
-            <a href="/proyecto2/Booking.html" class="nav-link">Booking</a>
+            <a href="SearchHome.html" class="nav-link">Home</a>
+            <a id="ridesLink" href="MyRides.html" class="nav-link">Rides</a>
+            <a href="Booking.html" class="nav-link">Booking</a>
             <input type="text" class="search-input" placeholder="Search...">
 
             <!-- Icono de perfil con un menú desplegable -->
             <div class="icon-wrapper" tabindex="0">
                 <i class="fas fa-user" id="profile-icon"></i>
                 <div class="dropdown-menu">
-                    <a href="/proyecto2/InfoUsuario.html" class="dropdown-item">Settings</a>
-                    <a href="/proyecto2/Login.html" class="dropdown-item">Logout</a>
+                    <a href="InfoUsuario.html" class="dropdown-item">Settings</a>
+                    <a href="Login.html" class="dropdown-item">Logout</a>
                 </div>
             </div>
         </nav>
@@ -41,7 +41,7 @@
             <p><strong>Seats:</strong> <span id="seats"></span></p>
             <p><strong>Car:</strong> <span id="car"></span></p>
             <p><strong>Free:</strong> <span id="fee"></span></p>
-            <a href="/proyecto2/MyRides.html" class="new-ride2-btn">Back</a>
+            <a href="MyRides.html" class="new-ride2-btn">Back</a>
         </div>
     </div>
 
@@ -65,7 +65,7 @@
                 document.getElementById('fee').textContent = ride.fee > 0 ? 'No' : 'Yes';
             } else {
                 alert('Ride not found');
-                window.location.href = '/proyecto2/MyRides.html'; // Redirigir si el viaje no se encuentra
+                window.location.href = 'MyRides.html'; // Redirigir si el viaje no se encuentra
             }
         });
     </script>
