@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registro Driver</title>
+</head>
+
+<body>
+    <div id="regis" class="hoja-container">
+        <div class="logo-section">
+            <img src="/proyecto2/Images/logo.jpg" alt="logo" width="100">
+            <h1>AVENTONES</h1>
+        </div>
+        <h5>Registro Driver</h5>
+       
+        <div class="regis">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="FirstName">Nombre:</label>
+                    <input type="text" id="FirstName" name="FirstName">
+                </div>
+                <div class="form-group">
+                    <label for="LastName">Apellidos:</label>
+                    <input type="text" id="LastName" name="LastName">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="Cedula">Número de cédula:</label>
+                    <input type="text" id="Cedula" name="Cedula">
+                </div>
+                <div class="form-group">
+                    <label for="Password">Password:</label>
+                    <input type="password" id="Password" name="Password">
+                </div>
+                <div class="form-group">
+                    <label for="BirthDate">Fecha de nacimiento:</label>
+                    <input type="date" id="BirthDate" name="BirthDate">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="Email">Correo electrónico:</label>
+                    <input type="email" id="Email" name="Email">
+                </div>
+                <div class="form-group">
+                    <label for="PhoneNumber">Número telefónico:</label>
+                    <input type="text" id="PhoneNumber" name="PhoneNumber">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="CarBrand">Marca del vehículo:</label>
+                    <input type="text" id="CarBrand" name="CarBrand">
+                </div>
+                <div class="form-group">
+                    <label for="CarModel">Modelo del vehículo:</label>
+                    <input type="text" id="CarModel" name="CarModel">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="CarYear">Año del vehículo:</label>
+                    <input type="number" id="CarYear" name="CarYear" min="1886" max="2024">
+                </div>
+                <div class="form-group">
+                    <label for="LicensePlate">Número de placa:</label>
+                    <input type="text" id="LicensePlate" name="LicensePlate">
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="form-row links">
+                <span class="link-item">Already a User <a href="/proyecto2/Login.html" class="link-group">Login
+                        Here</a></span>
+                
+            </div>
+            <button id="signUpButton" class="buttonSingUp">Sign Up</button>
+        </nav>
+    </div>
+    </div>
+    <hr>
+    <footer class="footer">
+        <p>
+            <a href="/proyecto2/SearchHome.html" target="_blank">Home</a> |
+            <a href="/proyecto2/MyRides.html" target="_blank">Rides</a> |
+            <a href="/proyecto2/Booking.html" target="_blank">Booking</a> |
+            <a href="/proyecto2/EditProfile.html" target="_blank">Settings</a> |
+            <a href="/proyecto2/Login.html" target="_blank">Login</a> |
+            <a href="/proyecto2/Registration/Registro.html" target="_blank">Register</a>
+        </p>
+        <p>&copy; Aventones.com</p>
+    </footer>
+    <script src="/proyecto2/JavaScript/driveregis.js"></script>
+</body>
+
+</html>

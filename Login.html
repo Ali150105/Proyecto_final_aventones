@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tico Rides</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-section">
+            <img src="Images/logo.jpg" alt="logo">
+            <h1>AVENTONES</h1>
+        </div>
+        <!-- Botón de inicio de sesión con Google -->
+        <div class="google-login">
+            <a href="https://accounts.google.com/signin/v2/identifier?service=accountsettings" class="google-btn">
+                <img src="Images/google.png" alt="Google Logo" class="google-logo"> Iniciar sesión con Google
+            </a>
+        </div>
+        <h2>or</h2>
+        <div class="input">
+            <label for="username">Username</label>
+            <input type="text" id="username" required>
+    
+            <label for="password">Password</label>
+            <input type="password" id="password" required>
+            <nav>
+                <h3>Not a user? <a href="Registration/Registro.html">Register Now</a></h3>
+                <button id="loginButton" class="buttonLogin">Login</button> 
+            </nav>
+        </div>
+    </div>
+    <hr>
+    <footer class="footer">
+        <p>
+            <a href="SearchHome.html" target="_blank">Home</a> |
+            <a href="MyRides.html" target="_blank">Rides</a> |
+            <a href="Booking.html" target="_blank">Booking</a> |
+            <a href="EditProfile.html" target="_blank">Settings</a> |
+            <a href="Login.html" target="_blank">Login</a> |
+            <a href="Registration/Registro.html" target="_blank">Register</a>
+        </p>
+        <p>&copy; Aventones.com</p>
+    </footer>
+    <script src="JavaScript/login.js"></script>
+</body>
+</html>
