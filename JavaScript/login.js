@@ -22,11 +22,11 @@ function loginUser(event) {
     if (currentUser) {
         localStorage.setItem('currentUser', JSON.stringify(currentUser));
         alert('Login successful!');
-        window.location.href = '/proyecto2/SearchHome.html'; // Redirigir a la página de búsqueda de viajes
+        window.location.href = 'SearchHome.html'; // Redirigir a la página de búsqueda de viajes
     } else if (currentDriver) {
         localStorage.setItem('currentUser', JSON.stringify(currentDriver));
         alert('Login successful!');
-        window.location.href = '/proyecto2/MyRides.html'; // Redirigir a la página de viajes
+        window.location.href = 'MyRides.html'; // Redirigir a la página de viajes
     } else {
         alert('Invalid username or password.');
     }

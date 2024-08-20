@@ -64,7 +64,7 @@
             <a href="SearchHome.html" target="_blank">Home</a> |
             <a href="MyRides.html" target="_blank">Rides</a> |
             <a href="Booking.html" target="_blank">Booking</a> |
-            <a href="EditProfile.html" target="_blank">Settings</a> |
+            <a href="InfoUsuario.html" target="_blank">Settings</a> |
             <a href="Login.html" target="_blank">Login</a> |
             <a href="Registro.html" target="_blank">Register</a>
         </p>
@@ -106,8 +106,8 @@
                         <td data-label="Car">${ride.make} ${ride.model}</td>
                         <td data-label="Free">${ride.fee > 0 ? 'No' : 'Yes'}</td>
                         <td data-label="Actions">
-                            <a href="/proyecto2/VerRide.html?index=${index}">View</a>| 
-                            <a href="/proyecto2/EdditRide.html?index=${index}">Edit</a>| 
+                            <a href="VerRide.html?index=${index}">View</a>| 
+                            <a href="EdditRide.html?index=${index}">Edit</a>| 
                             <a href="#" class="delete-btn" data-index="${index}">Delete</a>
                         </td>
                     `;
