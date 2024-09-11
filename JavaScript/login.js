@@ -14,7 +14,7 @@ function loginUser(event) {
     const storedUsers = JSON.parse(localStorage.getItem('users')) || [];
     const storedDrivers = JSON.parse(localStorage.getItem('drivers')) || [];
 
-    // Buscar el usuario o conductor en los datos almacenados
+    // Buscar el usuario o conductor en los datos
     const currentUser = storedUsers.find(user => user.email === username && user.password === password);
     const currentDriver = storedDrivers.find(driver => driver.email === username && driver.password === password);
 
